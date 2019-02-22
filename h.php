@@ -1,5 +1,5 @@
 <?php
-
+ 
 /* test getallheaders polyfill */
 
 if (!function_exists('getallheaders')) {
