@@ -5,6 +5,8 @@
 if (!function_exists('getallheaders')) {
 	function getallheaders() {
 		$headers = [];
+		if (isset($_SERVER['CONTENT_TYPE']))
+			$headers['Content-Type'] = $_SERVER['CONTENT_TYPE'];
 		foreach ($_SERVER as $name => $value) {
 			if (substr($name, 0, 5) == 'HTTP_') {
 				$name = substr($name, 5);
