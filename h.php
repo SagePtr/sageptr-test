@@ -19,6 +19,7 @@ if (!function_exists('getallheaders')) {
 	}
 }
 
+header('Content-Type: text/plain');
 var_dump(getallheaders());
 
 ?>
