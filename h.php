@@ -1,6 +1,6 @@
 <?php
 
-/* test getallheaders polyfill */ 
+ /* test getallheaders polyfill */ 
 
 if (!function_exists('getallheaders')) {
 	function getallheaders() {
