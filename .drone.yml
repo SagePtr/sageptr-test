@@ -1,0 +1,8 @@
+kind: pipeline
+name: test
+steps:
+
+- name: alpine
+  image: alpine:latest
+  commands:
+    - echo "Hello World!"
